@@ -12,7 +12,7 @@ class Solution {
   private void helper(List<List<Integer>> result, int[] candidates, int target, List<Integer> cur, int index) {
     if (target > 0) {
       for (int i = index; i < candidates.length; i++) {
-        if (i > index && candidates[i] = candidates[i - 1]) {
+        if (i > index && candidates[i] == candidates[i - 1]) {
           continue;
         }
         cur.add(candidates[i]);
